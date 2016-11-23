@@ -1,6 +1,15 @@
 
 body, html {
     background-color: #000;
+
+}
+
+h2 {
+    font-size: 4.0vw;
+}
+p, p > a {
+    font-size:20em;
+    font-size: 4vmin;
 }
 
 div#fullpage > div:nth-child(3) {
