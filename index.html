@@ -1,39 +1,45 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Title of the document</title>
+        <title>Stoker</title>
+        <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.8/jquery.fullPage.min.css" />
-        <style>
-            div#home {
-                background: #000 url('img/logo.gif') no-repeat center center;
-                background-size: contain;
-            }
-        </style>
+        <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/main.css">
     </head>
 
     <body>
-
         <div id="fullpage">
-            <div class="section" id="home"></div>
-            <div class="section">Some section 2</div>
-            <div class="section">Some section 3</div>
-            <div class="section">Some section 4</div>
+            <div class="section">&nbsp;</div>
+            <div class="section">
+				<div class="slide w3-container w3-center">
+					<img data-src="img/stoker-band-t-shirt.jpg" alt="" title="" class="w3-image">
+				</div> 
+				<div class="slide w3-container w3-center">
+					<img data-src="img/stoker-band-hoody-top.jpg" alt="" title="" class="w3-image">
+				</div> 
+			</div> 
+            <div class="section">
+                <div class="w3-container w3-center">
+                    <h2>Merchandise Orders</h2>
+                    <p>&#9889;<a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#115;&#116;&#111;&#107;&#101;&#114;&#111;&#102;&#102;&#105;&#099;&#105;&#097;&#108;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">&#115;&#116;&#111;&#107;&#101;&#114;&#111;&#102;&#102;&#105;&#099;&#105;&#097;&#108;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a>&#9889;</p>
+                </div>
+            </div>
         </div> 
 
+		<ul id="menu">
+			<li data-menuanchor="home" class="active"><a href="#home">home</a></li>
+			<li data-menuanchor="merch"><a href="#merch">merch</a></li>
+			<li data-menuanchor="orders"><a href="#orders">orders</a></li>
+		</ul>
+
+        <audio id="stutter" src="audio/stutter.mp3" preload="auto">
+            Your browser does not support the <code>audio</code> element.
+        </audio>
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-
-        <!-- This following line is only necessary in the case of using the plugin option `scrollOverflow:true` -->
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.8/vendors/scrolloverflow.min.js"></script>
-
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.8/jquery.fullPage.min.js"></script>
-        <script type="text/javascript">
-            $(document).ready(function() {
-                $('#fullpage').fullpage({
-                    sectionsColor: ['#000', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
-                    css3: true,
-                    scrollingSpeed: 1000
-                });
-            });
-        </script>
+        <script type="text/javascript" src="js/main.js"></script>
     </body>
 </html>

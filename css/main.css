@@ -1,0 +1,28 @@
+
+body, html {
+    background-color: #000;
+}
+
+div#fullpage > div:nth-child(3) {
+    color:#fff;
+}
+
+div#fullpage > div:nth-child(2) {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+div#fullpage > div:nth-child(1) {
+    background: #000 url('/img/stoker-band-logo.gif') no-repeat center center;
+    background-size: contain;
+}
+
+@keyframes fadein {
+    0% {
+        opacity:0;                    
+    }
+    100% {
+        opacity:1;
+    }
+}
+
